@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1092459992595",
+    "project_id": "photonotes-pz32",
+    "storage_bucket": "photonotes-pz32.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092459992595:android:898ac024d85eaa9b7d91e6",
+        "android_client_info": {
+          "package_name": "com.example.photo_notes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092459992595-ltemund86q7ae96g7javhefe214i2h8h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.photo_notes",
+            "certificate_hash": "be62ea0619a70ea7d69bbdde36c6ba446d88f1ee"
+          }
+        },
+        {
+          "client_id": "1092459992595-b13skjbkh7a5jcl8ij8eicl08sgb4gvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGvk2FuTXOuhj2QYq3LggrECYkfq46evw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092459992595-b13skjbkh7a5jcl8ij8eicl08sgb4gvu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1092459992595-mlv31s9ake501a2gt0k7ejps05jucifm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.photoNotes"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
