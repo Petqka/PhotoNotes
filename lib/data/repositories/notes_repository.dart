@@ -24,11 +24,20 @@ class NotesRepository {
   }
 
   Stream<List<Note>> getNotesStream() {
-    return _notesCollection.orderBy('date', descending: true).snapshots().map((
-      snapshot,
-    ) {
-      return snapshot.docs.map((doc) => Note.fromFirestore(doc)).toList();
-    });
+    final userId = _auth.currentUser?.uid;
+    if (userId == null) {
+      return Stream.error(Exception('User not logged in'));
+    }
+
+    return _firestore
+        .collection('users')
+        .doc(userId)
+        .collection('notes')
+        .orderBy('date', descending: true)
+        .snapshots()
+        .map((snapshot) {
+          return snapshot.docs.map((doc) => Note.fromFirestore(doc)).toList();
+        });
   }
 
   Future<void> addNote(Note note) async {
