@@ -475,7 +475,7 @@ class _NoteDetailScreenState extends State<NoteDetailScreen> {
                         ),
                         child: const Row(
                           children: [
-                            Icon(Icons.add, color: Colors.white, size: 16),
+                            Icon(Icons.add, color: Colors.white, size: 18),
                             SizedBox(width: 4),
                             Text(
                               'Додати тег',
